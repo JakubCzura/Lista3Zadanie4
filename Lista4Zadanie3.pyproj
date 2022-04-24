@@ -24,7 +24,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Celsius.py" />
     <Compile Include="Fahrenheit.py" />
+    <Compile Include="Kelvin.py" />
     <Compile Include="main.py" />
     <Compile Include="Temperature.py" />
   </ItemGroup>
