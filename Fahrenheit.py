@@ -5,7 +5,9 @@ import Kelvin
 class Fahrenheit(Temperature.Temperature):
     def __init__(self, temperature):
         super().__init__(self.temperature)
+        self.temperature = temperature
 
+    temperature = 0.0
     @property
     def temperature(self):
         return self.temperature

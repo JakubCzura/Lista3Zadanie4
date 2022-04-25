@@ -2,8 +2,6 @@ import abc
 
 class Temperature(abc.ABC):
 
-    temperature = 0.0
-
     @abc.abstractmethod
     def __init__(self, temperature):
         self.temperature = temperature
