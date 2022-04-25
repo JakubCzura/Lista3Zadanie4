@@ -1,8 +1,8 @@
 import Temperature
 
 class Celsius(Temperature.Temperature):
-    def __init__(self, temperature):
-        super().__init__(self.temperature)
+    def __init__(self):
+        super().__init__(temperature)
 
     @property
     def temperature(self):
