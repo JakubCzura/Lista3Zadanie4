@@ -4,7 +4,7 @@ class Temperature(abc.ABC):
 
     @abc.abstractmethod
     def __init__(self, temperature):
-        self.temperature = temperature
+        self._temperature = temperature
     
     @property
     @abc.abstractmethod
