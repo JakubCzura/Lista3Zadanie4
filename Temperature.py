@@ -5,21 +5,20 @@ class Temperature(abc.ABC):
     @abc.abstractmethod
     def __init__(self, temperature):
         self._temperature = temperature
-    
+
     @property
     @abc.abstractmethod
     def temperature(self):
-        return self.temperature
+        raise NotImplementedError
 
     @temperature.setter
     @abc.abstractmethod
     def temperature(self, value):
-        self.temperature = value
-        #self.__dict__['temperature'] = value
+        raise NotImplementedError
 
     @classmethod
     def __str__(self):
-        return f"{self.temperature} stopni w skali Celsjusz"
+        return self.temperature + " stopni w skali Celsjusz"
 
     @classmethod
     def __repr__(self):

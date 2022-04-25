@@ -14,19 +14,28 @@ class Kelvin(Temperature.Temperature):
     def temperature(self, value):
         self._temperature = value
 
-    #@abc.abstractmethod
+    def __str__(self):
+        return str(self.temperature) + " stopni w skali Kelvin"
+
+    def __repr__(self):
+        return self.__class__.__name__
+
+    def above_freezing(self):
+        if self.temperature > 273:
+            return True
+        else:
+            return False
+
     def convert_to_Fahrenheit(self):
         temp = 1.8*(self._temperature-273) + 32
         return Fahrenheit.Fahrenheit(temp)
 
-    #@abc.abstractmethod
     def convert_to_Celsius(self):
         temp = self._temperature - 273.16
         return Celsius.Celsius(temp)
     
-    #@abc.abstractmethod
     def convert_to_Kelvin(self):
         return Kelvin(self._temperature)
 
-
+    
 

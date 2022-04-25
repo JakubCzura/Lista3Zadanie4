@@ -5,10 +5,9 @@ import Fahrenheit
 
 
 if __name__ == '__main__':
-    print("Hello wrold")
 
-    F = Fahrenheit.Fahrenheit(20)
-    F.temperature = 30
+    F = Fahrenheit.Fahrenheit(2)
+    F.temperature = 32
     print(F.temperature)
 
     K = Kelvin.Kelvin(10)
@@ -21,3 +20,9 @@ if __name__ == '__main__':
 
     K2 = C.convert_to_Kelvin()
     print(K2.temperature)
+
+    C2 = K2.convert_to_Celsius()
+    print(C2)
+
+    F = F.convert_to_Fahrenheit()
+    print(repr(F))
