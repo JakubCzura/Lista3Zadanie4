@@ -32,8 +32,9 @@ class Fahrenheit(Temperature.Temperature):
 
     def convert_to_Celsius(self):
         temp = 0.556 * (self._temperature - 32.0)
-        return Celsius(temp)
+        return Celsius.Celsius(temp)
     
     def convert_to_Kelvin(self):
         temp = temp = 0.556 * (self._temperature - 32.0) + 273.16
-        return Kelvin(temp)
+        return Kelvin.Kelvin(temp)
+
