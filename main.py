@@ -31,7 +31,7 @@ if __name__ == '__main__':
                           Celsius1, Celsius2, Celsius3, Celsius4]
 
 
-    #Drukowanie listy i powy�ej zera - 2 podpunkt 
+    #Drukowanie listy i powyzej zera - 2 podpunkt 
     for Temperature in ListOfTemperatures:
         print(Temperature)
         if Temperature.above_freezing() == True:
@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
 
     
-    #Utworzenie trzech list z przekszta�conymi temperaturami - 3 podpunkt
+    #Utworzenie trzech list z przeksztalconymi temperaturami - 3 podpunkt
     ListOfTemperaturesFahrenheit = [Fahrenheit1, Fahrenheit2, Fahrenheit3, Fahrenheit4,
                                     Kelvin1.convert_to_Fahrenheit(), Kelvin2.convert_to_Fahrenheit(), Kelvin3.convert_to_Fahrenheit(), Kelvin4.convert_to_Fahrenheit(),
                                     Celsius1.convert_to_Fahrenheit(), Celsius2.convert_to_Fahrenheit(), Celsius3.convert_to_Fahrenheit(), Celsius4.convert_to_Fahrenheit()]
@@ -54,7 +54,7 @@ if __name__ == '__main__':
                                 Celsius1.convert_to_Kelvin(), Celsius2.convert_to_Kelvin(), Celsius3.convert_to_Kelvin(), Celsius4.convert_to_Kelvin()]
 
     print("\n")
-    #Wydrukowanie list kt�re s� poni�ej zamarzania wody - 4 podpunkt
+    #Wydrukowanie list ktore sa ponizej zamarzania wody - 4 podpunkt
     for temperature in ListOfTemperaturesFahrenheit:
         if temperature.above_freezing() == False:
             print(temperature)
