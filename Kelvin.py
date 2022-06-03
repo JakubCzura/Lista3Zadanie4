@@ -1,4 +1,4 @@
-#klasa Maæka
+#klasa Maï¿½ka
 
 import Temperature
 import Celsius
