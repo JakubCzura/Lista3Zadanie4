@@ -1,7 +1,8 @@
+#klasa Maćka
+
 import Temperature
 import Celsius
 import Kelvin
-#klasa Ma�ka
 
 class Fahrenheit(Temperature.Temperature):
     def __init__(self, temperature):

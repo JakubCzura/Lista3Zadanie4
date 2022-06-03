@@ -1,4 +1,4 @@
-#klasa Ma�ka
+#klasa Maćka
 
 import Temperature
 import Celsius

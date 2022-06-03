@@ -1,7 +1,8 @@
+#klasa Kuby
+
 import Temperature
 import Kelvin
 import Fahrenheit
-#klasa Kuby
 
 class Celsius(Temperature.Temperature):
     def __init__(self, temperature):
