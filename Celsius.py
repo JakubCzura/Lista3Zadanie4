@@ -1,6 +1,7 @@
 import Temperature
 import Kelvin
 import Fahrenheit
+#klasa Kuby
 
 class Celsius(Temperature.Temperature):
     def __init__(self, temperature):
@@ -21,7 +22,7 @@ class Celsius(Temperature.Temperature):
         return self.__class__.__name__
 
     def above_freezing(self):
-        if self.temperature > 0:
+        if self._temperature > 0:
             return True
         else:
             return False

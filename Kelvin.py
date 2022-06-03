@@ -1,3 +1,5 @@
+#klasa Maæka
+
 import Temperature
 import Celsius
 import Fahrenheit
@@ -21,7 +23,7 @@ class Kelvin(Temperature.Temperature):
         return self.__class__.__name__
 
     def above_freezing(self):
-        if self.temperature > 273:
+        if self._temperature > 273:
             return True
         else:
             return False

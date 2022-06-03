@@ -1,3 +1,5 @@
+#klasa Kuby
+
 import abc
 
 class Temperature(abc.ABC):
@@ -26,7 +28,7 @@ class Temperature(abc.ABC):
 
     @classmethod
     def above_freezing(self):
-        if self.temperature > 0:
+        if self._temperature > 0:
             return True
         else:
             return False
